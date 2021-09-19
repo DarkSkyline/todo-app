@@ -1,0 +1,23 @@
+Stack: 
+    Backend:
+        ☐ Add GraphQL/Prisma
+        ☐ Use Typescript
+    Frontend:
+        ☐ NextJS
+        ☐ Tailwind CSS
+
+Account:
+    ☐ Authenticate
+    ☐ Create account
+    ☐ Edit account
+    ☐ Verify email
+    ☐ Upload avatar/cover
+    ☐ Basic profile page
+
+Todos:
+    ☐ Create a todo
+    ☐ Edit a todo
+    
+Flags: 
+    ☐ Create flags
+    ☐ Edit flags
