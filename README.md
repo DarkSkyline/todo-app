@@ -3,14 +3,16 @@ Project created for my personal use.
 
 ## Stack
 For the project actually I've used this stack:
+
 #### Backend
 - GraphQL
 - MongoDB
+- bcryptjs
+- jsonwebtoken
+
 #### Frontend
 
-<!-- Setup -->
 ## Setup
-
 How to run the backend server
 ```bash
 > cd backend
