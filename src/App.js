@@ -1,22 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useRef } from 'react';
+import TodoItem from './components/TodoItem';
 
 function App() {
+  const [value, setValue] = useState('');
+  const [data, setData] = useState([]);
+  const inputEl = useRef(null);
+
+  const handleClick = () => {
+    if(value === '') return; 
+    setData(prev => [...prev, value])
+    setValue('')
+    inputEl.current.focus()
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+          <input ref={inputEl} type="text" value={value} onChange={event => setValue(event.target.value)}/>
+          <button onClick={handleClick}>Add</button>
+        </div>
+       <div>
+         <ul>
+         {
+           data.map((item, index) => (
+            <TodoItem name={item} key={index} />
+           ))
+         }
+         </ul>
+       </div>
       </header>
     </div>
   );
