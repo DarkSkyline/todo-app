@@ -1,34 +1,17 @@
+import { useState } from 'react';
 import './App.css';
-import { useState, useRef } from 'react';
-import TodoItem from './components/TodoItem';
+import Todo from './components/Todo'
+import Register from './pages/Register'
 
 function App() {
-  const [value, setValue] = useState('');
-  const [data, setData] = useState([]);
-  const inputEl = useRef(null);
-
-  const handleClick = () => {
-    if(value === '') return; 
-    setData(prev => [...prev, value])
-    setValue('')
-    inputEl.current.focus()
-  }
+  const [logged, setLogged] = useState(false)
 
   return (
     <div className="App">
       <header className="App-header">
-        <div>
-          <input ref={inputEl} type="text" value={value} onChange={event => setValue(event.target.value)}/>
-          <button onClick={handleClick}>Add</button>
-        </div>
        <div>
-         <ul>
-         {
-           data.map((item, index) => (
-            <TodoItem name={item} key={index} />
-           ))
-         }
-         </ul>
+         <Register />
+         {logged ? <Todo /> : ''}
        </div>
       </header>
     </div>
