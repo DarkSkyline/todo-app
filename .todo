@@ -1,16 +1,17 @@
 Stack: 
     Backend:
-        ☐ Add GraphQL/Prisma
+        ☐ Add GraphQL
+        ☐ Add Prisma
         ☐ Use Typescript
     Frontend:
         ☐ NextJS
         ☐ Tailwind CSS
 
 Account:
-    ☐ Authenticate
-    ☐ Create account
+    ✔ Authenticate @done(21-09-20 01:42)
+    ✔ Create account @done(21-09-20 01:42)
     ☐ Edit account
-    ☐ Verify email
+    ✘ Verify email @cancelled(21-09-20 01:42)
     ☐ Upload avatar/cover
     ☐ Basic profile page
 
