@@ -1,6 +1,6 @@
 Stack: 
     Backend:
-        ☐ Add GraphQL
+        ✔ Add GraphQL @done(21-09-21 01:03)
         ☐ Add Prisma
         ☐ Use Typescript
     Frontend:
@@ -16,8 +16,9 @@ Account:
     ☐ Basic profile page
 
 Todos:
-    ☐ Create a todo
+    ✔ Create a todo @done(21-09-21 16:06)
     ☐ Edit a todo
+    ✔ Delete a todo @done(21-09-21 16:05)
     
 Flags: 
     ☐ Create flags
